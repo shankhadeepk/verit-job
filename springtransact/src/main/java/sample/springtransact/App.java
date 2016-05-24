@@ -16,13 +16,15 @@ public class App
     {
     	ApplicationContext ctx=new ClassPathXmlApplicationContext("file:src/main/resources/app-context.xml");
     	
-    	Employee emp=new Employee();
+    	/*Employee emp=new Employee();
     	emp.setId(10);
     	emp.setEmpName("Shankha");
-    	emp.setEmpSalary(20000.00);
+    	emp.setEmpSalary(20000.00);*/
     	
     	EmpDAO empDao=(EmpDAO) ctx.getBean("empDaoImpl");
-    	empDao.save(emp);
+    	//empDao.save(emp);
+    	
+    	System.out.println("Emp : "+empDao.get(10));
     	
         System.out.println( "Hello World!" );
     }

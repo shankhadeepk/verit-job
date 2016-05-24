@@ -22,4 +22,9 @@ public class Employee {
 	public void setEmpSalary(double empSalary) {
 		this.empSalary = empSalary;
 	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", empName=" + empName + ", empSalary=" + empSalary + "]";
+	}
+	
 }

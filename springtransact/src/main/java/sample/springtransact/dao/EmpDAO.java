@@ -4,4 +4,5 @@ import sample.springtransact.beans.Employee;
 
 public interface EmpDAO {
 	public void save(Employee emp);
+	public Employee get(int empId);
 }
